@@ -1,0 +1,24 @@
+{
+  "name": "curd-filedb-app",
+  "version": "1.0.0",
+  "description": "CURD REST Api using json file as DB",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start" : "node server.js",
+    "dev" : "nodemon server.js"
+  },
+  "keywords": [
+    "REST",
+    "CURD",
+    "FILEDB"
+  ],
+  "author": "sekhara sahu <sekharasahu@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.5"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
