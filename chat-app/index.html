@@ -1,0 +1,29 @@
+<html>
+	<script src = "/socket.io/socket.io.js"></script>
+	<script>
+		let socket = io();
+		//socket.on('message', (data)=>{
+		//	document.write(data);
+		//})
+
+		//socket.on('testEvent', (data) => {
+		//		document.write(data.description);
+		//})
+
+		//socket.emit('clinetEvent', 'Event triggered from client side..');
+		
+		//socket.on('broadcast', (data) => {
+		//	document.body.innerHTML = '';
+		//	document.write(data.description);
+		//})
+
+		socket.on('newClient', (data) => {
+				document.body.innerHTML = '';
+				document.write(data.description);
+			})
+
+	</script>
+	<body>
+		<h1>Hello World...</h1>
+	</body>
+</html>
