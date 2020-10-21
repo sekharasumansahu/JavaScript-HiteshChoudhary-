@@ -4,10 +4,11 @@ const faker = require("faker")
 const MIN_LOAN_AMOUNT = 500
 const MAX_LOAN_AMOUNT = 100000
 ;(async function() {
-  const client = await MongoClient.connect(
-    process.env.MFLIX_DB_URI,
-    { wtimeout: 2500, poolSize: 50, useNewUrlParser: true },
-  )
+  const client = await MongoClient.connect(process.env.MFLIX_DB_URI, {
+    wtimeout: 2500,
+    poolSize: 50,
+    useNewUrlParser: true,
+  })
 
   /**
     In this portion of the lesson, we'll cover `update` change events, as well

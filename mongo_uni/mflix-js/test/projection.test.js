@@ -8,7 +8,7 @@ describe("Projection", () => {
   test("Can perform a country search for one country", async () => {
     const kosovoList = ["Kosovo"]
     const movies = await MoviesDAO.getMoviesByCountry(kosovoList)
-    console.log(movies[0]);
+    console.log(movies[0])
     expect(movies.length).toEqual(2)
   })
 

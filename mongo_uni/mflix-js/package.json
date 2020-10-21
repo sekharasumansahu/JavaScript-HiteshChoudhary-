@@ -10,25 +10,6 @@
     "changestream:update": "node test/lessons/change-updates.js",
     "changestream:insert": "node test/lessons/change-insert.js"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "linters": {
-      "*.js": [
-        "prettier --write",
-        "eslint --fix",
-        "npm test",
-        "git add"
-      ]
-    },
-    "ignore": [
-      "**/build/**",
-      "**/data/**"
-    ]
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
