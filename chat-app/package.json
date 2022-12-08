@@ -16,7 +16,7 @@
   "author": "sekhara sahu <sekharasahu@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "mongodb": "^3.6.2",
     "socket.io": "^2.3.0"
   },
